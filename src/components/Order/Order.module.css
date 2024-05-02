@@ -1,0 +1,38 @@
+.order {
+	flex-shrink: 0;
+	padding: 25px;
+	background-color: var(--light-grey-color);
+	border-radius: 21px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.order_title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.order_summ {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.order_summ p {
+	display: block;
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 48px;
+	color: var(--8b-color);
+}
+
+.order_summ div {
+	font-weight: 600;
+	font-size: 60px;
+}
+
+.order_summ span {
+	font-size: 16px;
+}

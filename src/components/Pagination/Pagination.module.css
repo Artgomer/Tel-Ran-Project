@@ -1,0 +1,42 @@
+.pages_list {
+	margin: 40px auto 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px
+}
+
+.page_item {
+	flex-shrink: 0;
+}
+
+.num_btn {
+	position: relative;
+	width: 48px;
+	height: 48px;
+
+	font-size: 20px;
+	text-align: center;
+
+	border: 1px solid var(--a7-color);
+	color: var(--black-color);
+	border-radius: 8px;
+
+	cursor: pointer;
+	transition: color var(--hover-time) ease;
+}
+
+.num_btn.active {
+	color: var(--ui-color);
+	background-color: var(--ui-button-color);
+}
+
+@media (min-width: 762px) {
+	.num_btn:hover {
+		color: var(--ui-color)
+	}
+
+	.num_btn:active {
+		top: 1px;
+	}
+}

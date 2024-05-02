@@ -1,0 +1,17 @@
+.products_list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	justify-items: center;
+	gap: 32px;
+	padding-bottom: 16px;
+}
+
+.products_list.nowrap {
+	grid-template-columns: repeat(4, minmax(300px, 1fr));
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+}
+
+.products_list li {
+	scroll-snap-align: start;
+}

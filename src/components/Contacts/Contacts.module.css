@@ -1,0 +1,41 @@
+.contacts {
+	margin-bottom: 32px;
+}
+
+.address {
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	gap: 32px;
+	font-style: normal;
+}
+
+.address_item {
+	background: var(--light-grey-color);
+	padding: 32px;
+	border-radius: 12px;
+}
+
+.address_item p {
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--8b-color);
+	margin-bottom: 16px;
+}
+
+.address_item div {
+	display: flex;
+	gap: 16px;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 1;
+}
+
+@media (max-width: 1048px) {
+	.address {
+		grid-template-columns: 1fr;
+	}
+
+	.address_item div {
+		font-size: 28px;
+	}
+}

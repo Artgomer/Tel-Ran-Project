@@ -1,0 +1,81 @@
+.input {
+	font-size: 18px;
+
+	background-color: var(--white-color);
+
+	outline: none;
+
+	transition: border var(--hover-time) ease;
+}
+
+.input.sale {
+	padding: 16px 32px;
+
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+
+	border: 1px solid var(--white-color);
+	border-radius: 6px;
+	background-color: transparent;
+	color: var(--white-color);
+}
+
+.input.sale::placeholder {
+	color: var(--white-color);
+}
+
+.input.order {
+	padding: 25px;
+
+	max-width: 446px;
+	width: 100%;
+	height: 72px;
+
+	font-weight: 500;
+
+	border: 1px solid var(--black-color);
+	border-radius: 20px;
+
+	color: var(--92-color);
+}
+
+
+.input.filter {
+	padding: 12px 10px;
+
+	width: 100px;
+	height: 40px;
+
+	font-size: 16px;
+
+	border: 1px solid var(--black-color);
+	border-radius: 7px;
+
+	color: var(--a7-color);
+
+	cursor: pointer;
+	outline: none;
+
+	transition: border var(--hover-time) ease;
+}
+
+.input.error {
+	position: relative;
+	z-index: 20;
+
+	border: 2px solid var(--error-color);
+}
+
+.input.filter::-webkit-outer-spin-button,
+.input.filter::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.input:focus {
+	border: 2px solid var(--white-color);
+}
+
+.input.filter:hover::placeholder {
+	color: var(--ui-color);
+}

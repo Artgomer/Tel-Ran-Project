@@ -1,0 +1,9 @@
+.products_page {
+	margin-top: 50px;
+}
+
+@media (max-width: 762px) {
+	.products_page {
+		margin-top: 100px;
+	}
+}
